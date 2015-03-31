@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+    <title>Öğrenci Kayıt</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+
+    <link href="signin.css" rel="stylesheet"/>
+
+
+  </head>
+ 
+<body style="background-color:  #ffffff;">
+ 
+ 
+    
+<div class="container">
+    <div class="navbar navbar-default">
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">AnaSayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+
+
+
+                <li><a href="#">Hizmetlerimiz</a></li>
+
+                <li ><a href="#">Kayıt</a></li>
+                <li><a href="#">Yetkili Girişi</a></li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+    
+    
+    <form class="form-signin" action="ogrenciServlet" method="Post" role="form">
+        
+        <h2 class="form-signin-heading">Öğrenci Kayıt</h2>
+        <table>
+        <tr>
+            <td>Öğrenci No</td>
+            <td><input type="text" name="ogrenciNo" class="form-control"   required autofocus style=" width: 350px"/></td>
+        </tr>
+        <tr>
+            <td>Adı</td>
+            <td><input type="text" name="ogrenciAd" class="form-control"  required autofocus style=" width: 350px"/></td>
+        </tr>
+        <tr>
+            <td>Soyadı</td>
+            <td><input type="text" name="ogrenciSoyad" class="form-control"  required autofocus style=" width: 350px"/></td>
+        </tr>
+        <tr>
+            <td>Bölümü</td>
+            <td><select class="form-control"  name="ogrenciBolum" style=" width: 350px">
+           
+
+            <option value="0">Bilgisayar Mühendisliği</option>
+            <option value="1">Çevre Mühendisliği </option>
+            <option value="2">Elektrik ve Elektronik Mühendisliği</option>
+            <option value="3">Endüstri Mühendisliği</option>
+            <option value="4">Gıda Mühendisliği</option>
+            <option value="5">Harita Mühendisliği</option>
+            <option value="6">İnşaat Mühendisliği</option>
+            <option value="7">Kimya Mühendisliği</option>
+            <option value="8">Makina Mühendisliği</option>
+            <option value="9">Malzeme Bilimleri Mühendisliği</option>
+            </select>
+            </td>
+        </tr>
+        
+        <tr>
+             
+            <td>Eposta</td>
+            <td><input type="email" class="form-control" name="ogrenciEposta"  required autofocus style=" width: 350px"/> </td>
+        </tr>
+
+
+        <tr>
+            <td></td>
+            
+            <td><button class="btn btn-lg btn-primary btn-block" type="submit" style=" width: 150px;">Kaydet</button></td>
+        </tr>
+        </table>
+    </form>
+    
+    <hr class="featurette-divider">
+
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted credit">Ufuk Palavar Tasarımıdır. &copy; 2015 Company,Tüm Hakları Saklıdır.   <a href="#" class="btn" style="color:  darkgrey; float: right">Hakkımda</a> <a class="btn" href="#" style="color:  darkgrey; float: right">Gizlilik</a></p>
+
+        </div>
+    </div>
+
+
+
+
+
+</div> <!-- /container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
